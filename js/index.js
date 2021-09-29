@@ -27,7 +27,7 @@ footer.addEventListener('mouseover', function(e){
     e.stopPropagation();
 });
 
-//3wheel
+//wheel
 
 const foot = document.querySelector('footer');
     foot.addEventListener('wheel', function(e){
@@ -45,6 +45,31 @@ anchors.forEach(function(e){
         console.log('turning the links blue')
     });
 })
+
+//drag
+
+const drag = document.querySelector('.headerImg');
+drag.addEventListener('drag', function(){
+    console.log("no more dragging pls")
+});
+
+//copy
+window.addEventListener('copy', function(){
+    alert("no copy")
+});
+
+//mouseleave
+
+const destination = document.querySelectorAll(".destination");
+destination.forEach(function(event){
+    event.addEventListener('mouseleave', function(){
+        event.style.backgroundColor = 'green';
+        event.style.color = 'pink';
+    });
+})
+
+
+
 
   
   
