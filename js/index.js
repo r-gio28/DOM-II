@@ -68,8 +68,13 @@ destination.forEach(function(event){
     });
 })
 
+//clickx2
 
-
+const noRefresh = document.querySelector('.nav a');
+noRefresh.addEventListener('click', function(event){
+    console.log(`Clicked`);
+    event.preventDefault();
+});
 
   
   
